@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>WebRTC Demo</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h2>1. Habilite sua webcam</h2>
+    <div class="videos">
+      <span>
+        <h3>Local</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Remoto</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <button id="webcamButton">Começar</button>
+    <h2>2. Criar nova chamada</h2>
+    <button id="callButton" disabled>Criar chamada(offer)</button>
+
+    <h2>3. Entrar em uma call</h2>
+    <p>resposta de um diverente navegador ou dispositivo</p>
+
+    <input id="callInput" />
+    <button id="answerButton" disabled>Atender</button>
+
+    <h2>4. Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
